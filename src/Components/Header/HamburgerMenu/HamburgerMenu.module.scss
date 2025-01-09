@@ -1,0 +1,137 @@
+.burgerCheckbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: #f7f3f3;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #f7f3f3;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+.burgerCheckbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+.burgerCheckbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+
+.curtain {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(23, 33, 53, 0.8);
+  transform: translateY(-110%);
+}
+
+.menuList {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 72px 74px 74px;
+  margin: 0;
+  background-color: #abadb2;
+  background-color: rgb(23, 33, 53);
+  list-style-type: none;
+  transform: translateY(-110%);
+  transition: 0.3s;
+  border-bottom-left-radius: 50%;
+  box-shadow: rgba(23, 33, 53, 0.4) -5px 5px, rgba(23, 33, 53, 0.3) -10px 10px,
+    rgba(23, 33, 53, 0.2) -15px 15px, rgba(23, 33, 53, 0.1) -20px 20px,
+    rgba(23, 33, 53, 0.05) -25px 25px;
+}
+.menuItem {
+  display: block;
+  font-size: 18px;
+  text-align: start;
+  a {
+    color: #f7f3f3;
+    text-decoration: none;
+  }
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contactBtn {
+  width: 100%;
+  max-width: 122px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  padding: 8px 21px;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7f3f3;
+  background-color: #3474f3;
+}
+
+.burgerCheckbox:checked ~ .menuList {
+  transform: translateY(0%);
+}
+
+.burgerCheckbox:checked ~ .curtain {
+  transform: translateY(0%);
+}
+
+.light {
+  .burger::before,
+  .burger::after {
+    background-color: #111827;
+  }
+  .burger::before {
+    box-shadow: 0 11px 0 #111827;
+  }
+  .curtain {
+    background-color: rgba(227, 232, 237, 0.8);
+  }
+  .menuList {
+    background-color: rgb(227, 232, 237);
+    box-shadow: rgba(227, 232, 237, 0.4) -5px 5px,
+      rgba(227, 232, 237, 0.3) -10px 10px, rgba(227, 232, 237, 0.2) -15px 15px,
+      rgba(227, 232, 237, 0.1) -20px 20px, rgba(227, 232, 237, 0.05) -25px 25px;
+  }
+  .menuItem {
+    a {
+      color: #111827;
+    }
+  }
+}

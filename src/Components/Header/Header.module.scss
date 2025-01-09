@@ -1,0 +1,90 @@
+.header {
+  padding: 15px 0;
+  color: #f7f3f3;
+  .logo {
+    color: #f7f3f3;
+  }
+  .item {
+    a {
+      color: #f7f3f3;
+    }
+  }
+}
+
+.light {
+  padding: 15px 0;
+  color: #111827;
+  .logo {
+    color: #111827;
+  }
+  .item {
+    a {
+      color: #111827;
+    }
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.logo {
+  display: block;
+  text-decoration: none;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.item {
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.contactBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  padding: 8px 21px;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #f7f3f3;
+  background-color: #3474f3;
+}
+
+@media only screen and (max-width: 557px) {
+  .hamburgerMenu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .list {
+    display: none;
+  }
+}

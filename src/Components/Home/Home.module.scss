@@ -1,0 +1,306 @@
+.about {
+  padding: 92px 0;
+}
+
+.aboutLight {
+  padding: 92px 0;
+  .aboutTitle {
+    color: #111827;
+  }
+
+  .aboutDescription {
+    color: #898989;
+  }
+}
+
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTitle {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 0 24px;
+  font-family: "Source Code Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+  text-align: center;
+  color: #f7f3f3;
+}
+
+.aboutDescription {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 0 36px;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: justify;
+  color: #abadb2;
+}
+
+.aboutMoreBtn {
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.7%;
+  text-decoration: none;
+  padding: 12px 21px;
+  border-radius: 6px;
+  color: #f7f3f3;
+  background-color: #3474f3;
+}
+
+// work //
+
+.work {
+  padding: 96px 0;
+}
+
+.light {
+  padding: 96px 0;
+  .workTitle {
+    color: #111827;
+  }
+  .workItem {
+    background-color: #e3e8ed;
+  }
+  .GitHub {
+    color: #111827;
+  }
+  .view {
+    svg {
+      path {
+        stroke: #111827;
+      }
+    }
+  }
+}
+
+.workTitle {
+  margin: 0 0 42px;
+  font-family: "Source Code Pro";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #f7f3f3;
+  span {
+    display: inline-block;
+    color: #2563eb;
+  }
+}
+
+.workList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 40px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.workItem {
+  width: 100%;
+  max-width: 584px;
+  display: flex;
+  flex-direction: column;
+  padding: 26px;
+  border-radius: 10px;
+  background: #172135;
+}
+
+.workSubtitle {
+  margin: 0 0 26px;
+  font-family: "Source Code Pro";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.workImg {
+  width: 532px;
+  height: 372px;
+  margin-bottom: 26px;
+}
+
+.workSubList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.workSubitem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.lang {
+  font-family: "Source Code Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.GitHub {
+  color: #f7f3f3;
+}
+.view {
+  color: transparent;
+  svg {
+    path {
+      stroke: #f7f3f3;
+    }
+  }
+}
+
+.workDescription {
+  margin: 0;
+  font-family: "Source Code Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 153.7%;
+}
+
+// contact //
+
+.contact {
+  margin: 92px 0;
+}
+
+.contactLight {
+  margin: 92px 0;
+  .contactBox {
+    background-color: #e3e8ed;
+  }
+  .contactTitle {
+    color: #111827;
+  }
+}
+
+.contactBox {
+  padding: 78px 48px;
+  border-radius: 25px;
+  background-color: #172135;
+}
+
+.contactTitle {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: "Source Code Pro";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+  text-align: center;
+  color: #f7f3f3;
+  a {
+    display: block;
+    color: #2563eb;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+  // about //
+  .aboutMoreBtn {
+    padding: 8px 16px;
+  }
+  // work //
+  // contact //
+  .contactTitle {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 711px) {
+  // about //
+  .about,
+  .aboutLight {
+    padding: 46px 0;
+  }
+  .aboutTitle {
+    font-size: 40px;
+  }
+  .aboutDescription {
+    font-size: 20px;
+  }
+  // work //
+  .work,
+  .light {
+    padding: 46px 0;
+  }
+  .workTitle {
+    font-size: 40px;
+  }
+  .workSubtitle {
+    font-size: 30px;
+  }
+  // contact //
+  .contact,
+  .contactLight {
+    margin: 46px 0;
+  }
+  .contactBox {
+    padding: 48px;
+  }
+  .contactTitle {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+@media only screen and (max-width: 557px) {
+  // about //
+  .about,
+  .aboutLight {
+    padding: 38px 0;
+  }
+  //   work //
+  .work,
+  .light {
+    padding: 38px 0;
+  }
+  // contact //
+  .contact,
+  .contactLight {
+    margin: 38px 0;
+  }
+  .contactTitle {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 495px) {
+  // work //
+  // contact //
+  .contactBox {
+    padding: 28px;
+  }
+  .contactTitle {
+    font-size: 18px;
+  }
+}

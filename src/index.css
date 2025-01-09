@@ -1,0 +1,89 @@
+/* Source Code Pro */
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("./Fonts/Source_Code_Pro/SourceCodePro-Regular.woff2")
+      format("woff2"),
+    url("./Fonts/Source_Code_Pro/SourceCodePro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("./Fonts/Source_Code_Pro/SourceCodePro-Bold.woff2") format("woff2"),
+    url("./Fonts/Source_Code_Pro/SourceCodePro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Open Sans */
+@font-face {
+  font-family: "Open Sans";
+  src: url("./Fonts/Open_Sans/OpenSans-Bold.woff2") format("woff2"),
+    url("./Fonts/Open_Sans/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inter */
+@font-face {
+  font-family: "Inter 24pt";
+  src: url("./Fonts/Inter/Inter24pt-Regular.woff2") format("woff2"),
+    url("./Fonts/Inter/Inter24pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  font-family: "Source Code Pro";
+  font-weight: 700;
+  color: #f7f3f3;
+  background-color: #111827;
+  transition: all 0.4s ease;
+}
+
+.light {
+  color: #111827;
+  background-color: #f7f3f3;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1304px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
