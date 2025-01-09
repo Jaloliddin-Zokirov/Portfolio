@@ -129,9 +129,12 @@
 }
 
 .workImg {
-  width: 532px;
+  width: 100%;
+  max-width: 532px;
   height: 372px;
   margin-bottom: 26px;
+  border-radius: 15px;
+  align-self: stretch;
 }
 
 .workSubList {
@@ -146,6 +149,7 @@
 .workSubitem {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
   a {
     display: block;
@@ -283,6 +287,9 @@
   .work,
   .light {
     padding: 38px 0;
+  }
+  .workItem {
+    padding: 10px;
   }
   // contact //
   .contact,

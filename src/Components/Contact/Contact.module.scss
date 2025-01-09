@@ -17,12 +17,10 @@
     }
   }
   .right {
-    textarea {
+    color: #172135;
+    background-color: #e3e8ed;
+    &::placeholder {
       color: #172135;
-      background-color: #e3e8ed;
-      &::placeholder {
-        color: #172135;
-      }
     }
   }
 }

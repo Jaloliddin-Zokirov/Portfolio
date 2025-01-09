@@ -87,3 +87,9 @@ img {
   margin: 0 auto;
   padding: 0 48px;
 }
+
+@media only screen and (max-width: 680px) {
+  .container {
+    padding: 0 20px;
+  }
+}
